@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Block Blaster: The Kingdom of Blocks</title>
+<meta name="description" content="Privacy Policy for Block Blaster: The Kingdom of Blocks — what data is collected, how it's used, and your choices.">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Hide this page's own header (logo + cross-link nav) when embedded
+  // inside the game's page viewer — the game's own top bar already
+  // shows the title and provides back/close navigation, so this
+  // header would otherwise let a player navigate to a different
+  // bundled page from within the same iframe, with the game's own
+  // title never updating to match. Left untouched for the standalone
+  // website, where window.self === window.top and this never fires.
+  if (window.self !== window.top) {
+    document.documentElement.classList.add('embedded');
+  }
+</script>
+</head>
+<body>
+
+<div class="wrap">
+  <button class="home-fab" onclick="window.parent.postMessage('block-blaster-go-home', '*')" aria-label="Home">
+    <img src="home-icon.png" alt="">
+  </button>
+  <header class="site">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="app-icon.png" alt="Block Blaster icon">
+      <span class="brand-name">Block Blaster</span>
+    </a>
+    <nav class="site">
+      <a href="about.html">About</a>
+      <a href="privacy.html" class="current">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow"><img class="tile" src="app-icon.png" alt=""> Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">What Block Blaster: The Kingdom of Blocks collects, why, and what choices you have about it.</p>
+    <p class="meta">Last updated: August 29, 2026</p>
+  </section>
+</div>
+
+<main class="card">
+  <div class="wrap" style="padding:0;">
+
+    <h2>Overview</h2>
+    <p>Block Blaster: The Kingdom of Blocks is developed and published by Gemlight Empress. This Privacy Policy explains what information the Game collects, how it is used, and the choices available to you.</p>
+
+    <div class="section-divider"><span></span><span></span><span></span></div>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Locally stored game data:</strong> your board size preference, block theme selection, and sound/music/vibration settings are stored on your device and are not transmitted to our servers.</li>
+      <li><strong>Google Play Games sign-in (automatic):</strong> the Game automatically signs in using the Google account already active on your device — there is no manual login screen. When signed in, Google Play Games Services accesses your Google player identifier to back up your best score, governed by Google's own privacy policy. If sign-in isn't available or is skipped, the Game remains fully playable using local storage only.</li>
+      <li><strong>Advertising identifiers:</strong> if advertising is enabled (Google AdMob), the ad network may collect device advertising identifiers, coarse location, and interaction data to serve and measure ads, subject to your device's ad-tracking settings.</li>
+    </ul>
+
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To save your game progress and settings locally on your device.</li>
+      <li>To back up your best score to Google Play Games Cloud Save while signed in (see "Cloud Save &amp; Score Sync" below).</li>
+      <li>To display and measure advertising through Google AdMob.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>The Game integrates the following third-party services, each governed by its own privacy policy:</p>
+    <ul>
+      <li>Google Play Games Services (automatic sign-in, best score Cloud Save)</li>
+      <li>Google AdMob (advertising)</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The Game is designed to be suitable for a general audience. We do not knowingly collect personal information from children beyond what is required for functionality such as advertising, which is configured to respect applicable child-directed treatment settings (e.g., Google's Families Ad Program) when the app is listed for a young audience.</p>
+
+    <h2>Cloud Save &amp; Score Sync</h2>
+    <p>Your best score is saved on your device and, while automatically signed in, backed up to Google Play Games Cloud Save. Playing on another device with the same Google account restores your best score there — whichever score is higher is kept as the active one. If you play without an internet connection, your score continues saving locally and syncs the next time you're online.</p>
+
+    <h2>Data Retention &amp; Deletion</h2>
+    <p>Locally stored progress and settings can be erased at any time by clearing app data/storage through your device settings, or by uninstalling the Game. Cloud-saved score data associated with your Google Play account is retained and deleted according to your Google Account settings.</p>
+
+    <h2>Your Choices</h2>
+    <ul>
+      <li>You can opt out of personalized advertising through your device's ad settings.</li>
+      <li>You can independently disable sound, music, and vibration in the in-game Settings screen.</li>
+      <li>Because sign-in is automatic and tied to your device's active Google account, you can prevent it by signing out of Google Play Games at the device level, or managing permissions through your Google Account settings.</li>
+    </ul>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy periodically to reflect changes to the Game or applicable law.</p>
+
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--teal)"></span></div>
+      <div>
+        <strong>Questions about this policy?</strong>
+        <p>Questions about this policy can be directed to Gemlight Empress at <a href="mailto:gemlightempress@gmail.com">gemlightempress@gmail.com</a>.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="wrap">
+  <footer class="site">
+    <div>© 2026 Gemlight Empress. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

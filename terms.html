@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Block Blaster: The Kingdom of Blocks</title>
+<meta name="description" content="Terms of Service for Block Blaster: The Kingdom of Blocks.">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Hide this page's own header (logo + cross-link nav) when embedded
+  // inside the game's page viewer — the game's own top bar already
+  // shows the title and provides back/close navigation, so this
+  // header would otherwise let a player navigate to a different
+  // bundled page from within the same iframe, with the game's own
+  // title never updating to match. Left untouched for the standalone
+  // website, where window.self === window.top and this never fires.
+  if (window.self !== window.top) {
+    document.documentElement.classList.add('embedded');
+  }
+</script>
+</head>
+<body>
+
+<div class="wrap">
+  <button class="home-fab" onclick="window.parent.postMessage('block-blaster-go-home', '*')" aria-label="Home">
+    <img src="home-icon.png" alt="">
+  </button>
+  <header class="site">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="app-icon.png" alt="Block Blaster icon">
+      <span class="brand-name">Block Blaster</span>
+    </a>
+    <nav class="site">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html" class="current">Terms of Service</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow"><img class="tile" src="app-icon.png" alt=""> Legal</div>
+    <h1>Terms of Service</h1>
+    <p class="lede">The terms that apply when you download and play Block Blaster: The Kingdom of Blocks.</p>
+    <p class="meta">Last updated: August 29, 2026</p>
+  </section>
+</div>
+
+<main class="card">
+  <div class="wrap" style="padding:0;">
+
+    <h2>Acceptance of Terms</h2>
+    <p>By downloading, installing, or playing Block Blaster: The Kingdom of Blocks, developed by Gemlight Empress, you agree to these Terms of Service. If you do not agree, please do not use the Game.</p>
+
+    <h2>Google Play Games Sign-In &amp; Cloud Save</h2>
+    <p>The Game automatically signs in using the Google account active on your device when available. Signing in backs up your best score via Google Play Games Cloud Save, subject to Google's own Terms of Service in addition to these Terms. Sign-in is not required to play — if unavailable, the Game remains fully functional using local storage only. See the <a href="privacy.html">Privacy Policy</a> for details on how Cloud Save and score sync work.</p>
+
+    <h2>License</h2>
+    <p>Gemlight Empress grants you a limited, non-exclusive, non-transferable, revocable license to install and use the Game on devices you own or control, for personal, non-commercial entertainment purposes.</p>
+
+    <h2>Advertising</h2>
+    <p>The Game displays advertising supplied by Google AdMob, including banner, interstitial, and rewarded ad formats. Rewarded ads are optional and grant an in-game benefit (a Second Wind revive) only after the ad is completed.</p>
+
+    <h2>Acceptable Use</h2>
+    <ul>
+      <li>Do not reverse-engineer, decompile, or modify the Game except as permitted by law.</li>
+      <li>Do not use cheats, bots, or exploits to manipulate your score.</li>
+      <li>Do not use the Game for any unlawful purpose.</li>
+    </ul>
+
+    <h2>Disclaimer of Warranties</h2>
+    <p>The Game is provided "as is" without warranties of any kind, express or implied, including but not limited to fitness for a particular purpose, non-infringement, and uninterrupted or error-free operation.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, Gemlight Empress shall not be liable for any indirect, incidental, or consequential damages arising from your use of the Game.</p>
+
+    <h2>Termination</h2>
+    <p>We may suspend or terminate access to the Game for violation of these Terms.</p>
+
+    <h2>Changes to These Terms</h2>
+    <p>We may revise these Terms from time to time. Continued use of the Game after changes constitutes acceptance of the revised Terms.</p>
+
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--teal)"></span></div>
+      <div>
+        <strong>Questions about these terms?</strong>
+        <p>Questions about these Terms can be directed to Gemlight Empress at <a href="mailto:gemlightempress@gmail.com">gemlightempress@gmail.com</a>.</p>
+      </div>
+    </div>
+
+    <p style="text-align:center; color:var(--muted); margin-top:36px; font-size:13.5px;">Block Blaster: The Kingdom of Blocks · Gemlight Empress</p>
+
+  </div>
+</main>
+
+<div class="wrap">
+  <footer class="site">
+    <div>© 2026 Gemlight Empress. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Block Blaster: The Kingdom of Blocks</title>
+<meta name="description" content="About Block Blaster: The Kingdom of Blocks, developed by Gemlight Empress.">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Hide this page's own header (logo + cross-link nav) when embedded
+  // inside the game's page viewer — the game's own top bar already
+  // shows the title and provides back/close navigation, so this
+  // header would otherwise let a player navigate to a different
+  // bundled page from within the same iframe, with the game's own
+  // title never updating to match. Left untouched for the standalone
+  // website, where window.self === window.top and this never fires.
+  if (window.self !== window.top) {
+    document.documentElement.classList.add('embedded');
+  }
+</script>
+</head>
+<body>
+
+<div class="wrap">
+  <button class="home-fab" onclick="window.parent.postMessage('block-blaster-go-home', '*')" aria-label="Home">
+    <img src="home-icon.png" alt="">
+  </button>
+  <header class="site">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="app-icon.png" alt="Block Blaster icon">
+      <span class="brand-name">Block Blaster</span>
+    </a>
+    <nav class="site">
+      <a href="about.html" class="current">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow"><img class="tile" src="app-icon.png" alt=""> About</div>
+    <h1>Block Blaster: The Kingdom of Blocks</h1>
+    <p class="lede">Developed by Gemlight Empress</p>
+  </section>
+</div>
+
+<main class="card">
+  <div class="wrap" style="padding:0;">
+
+    <h2 style="margin-top:0;">About the Game</h2>
+    <p>Welcome to Block Blaster: The Kingdom of Blocks, a colorful block-puzzle adventure where every cleared line grows your kingdom. Drag pieces onto the board, chain combos, master twelve crafted block styles, and see how far you can push your best score.</p>
+
+    <div class="section-divider"><span></span><span></span><span></span></div>
+
+    <h2>Studio</h2>
+    <p>Gemlight Empress is built on the belief that games are more than entertainment — they are worlds waiting to be discovered. We create original experiences with artistic vision, technical excellence, and a commitment to quality in every detail.</p>
+
+    <h2>Version</h2>
+    <p>Block Blaster: The Kingdom of Blocks — v1.0.0</p>
+
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--teal)"></span></div>
+      <div>
+        <strong>Support</strong>
+        <p><a href="mailto:gemlightempress@gmail.com">gemlightempress@gmail.com</a></p>
+        <p style="margin-top:6px;">Website: (coming soon)</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="wrap">
+  <footer class="site">
+    <div>© 2026 Gemlight Empress. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

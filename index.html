@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Block Blaster: The Kingdom of Blocks</title>
+<meta name="description" content="Block Blaster: The Kingdom of Blocks — a block-puzzle game with twelve visual themes, three board sizes, and no account required.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero.home { padding-bottom: 60px; }
+  .hero.home h1 { font-size: clamp(36px, 6vw, 56px); }
+  .home-tiles {
+    display: flex; gap: 10px; margin-bottom: 26px;
+  }
+  .home-tiles span {
+    width: 22px; height: 22px; border-radius: 6px;
+    animation: pop 2.4s ease-in-out infinite;
+  }
+  .home-tiles span:nth-child(1) { background: var(--coral); animation-delay: 0s; }
+  .home-tiles span:nth-child(2) { background: var(--gold); animation-delay: 0.15s; }
+  .home-tiles span:nth-child(3) { background: var(--teal); animation-delay: 0.3s; }
+  .home-tiles span:nth-child(4) { background: #B784FF; animation-delay: 0.45s; }
+  @keyframes pop { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  @media (prefers-reduced-motion: reduce) { .home-tiles span { animation: none; } }
+
+  .link-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 8px; }
+  @media (max-width: 560px) { .link-grid { grid-template-columns: 1fr; } }
+  .link-card {
+    display: block; text-decoration: none; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px;
+    transition: border-color 150ms ease, transform 150ms ease;
+  }
+  .link-card:hover { border-color: var(--coral); transform: translateY(-2px); }
+  .link-card, .link-card h3 { color: var(--ink); }
+  .link-card .tile-row { display: flex; gap: 4px; margin-bottom: 12px; }
+  .link-card .tile-row span { width: 8px; height: 8px; border-radius: 2.5px; }
+  .link-card h3 { font-family: 'Baloo 2', sans-serif; font-size: 17px; margin: 0 0 6px; }
+  .link-card p { margin: 0; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="site">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="app-icon.png" alt="Block Blaster icon">
+      <span class="brand-name">Block Blaster</span>
+    </a>
+    <nav class="site">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </header>
+
+  <section class="hero home">
+    <div class="home-tiles"><span></span><span></span><span></span><span></span></div>
+    <h1>The Kingdom of Blocks</h1>
+    <p class="lede">A free block-puzzle game for phones. Twelve hand-drawn themes, three board sizes, and nothing to sign in for — just drag, clear, and see how far your kingdom grows.</p>
+  </section>
+</div>
+
+<main class="card">
+  <div class="wrap" style="padding:0;">
+    <h2 style="margin-top:0;">Explore</h2>
+    <div class="link-grid">
+      <a class="link-card" href="about.html">
+        <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span></div>
+        <h3>About the game</h3>
+        <p>What Block Blaster is, and what's inside it.</p>
+      </a>
+      <a class="link-card" href="privacy.html">
+        <div class="tile-row"><span style="background:var(--teal)"></span><span style="background:var(--coral)"></span></div>
+        <h3>Privacy Policy</h3>
+        <p>What data is collected, and by whom.</p>
+      </a>
+      <a class="link-card" href="support.html">
+        <div class="tile-row"><span style="background:var(--gold)"></span><span style="background:var(--teal)"></span></div>
+        <h3>Help &amp; Support</h3>
+        <p>Answers to common questions, and how to reach us.</p>
+      </a>
+      <a class="link-card" href="terms.html">
+        <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--teal)"></span></div>
+        <h3>Terms of Service</h3>
+        <p>The terms that apply when you play.</p>
+      </a>
+    </div>
+  </div>
+</main>
+
+<div class="wrap">
+  <footer class="site">
+    <div>© 2026 Gemlight Empress. All rights reserved.</div>
+    <div class="foot-links">
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Help &amp; Support</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
