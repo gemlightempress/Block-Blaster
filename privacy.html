@@ -2,121 +2,174 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Block Blaster: The Kingdom of Blocks</title>
-<meta name="description" content="Privacy Policy for Block Blaster: The Kingdom of Blocks — what data is collected, how it's used, and your choices.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Privacy Policy — Block Blaster: Kingdom of Block</title>
+<meta name="description" content="What Block Blaster: Kingdom of Block collects, why, and what choices you have about it.">
+<link rel="icon" href="app-icon.png">
 <link rel="stylesheet" href="style.css">
 <script>
-  // Hide this page's own header (logo + cross-link nav) when embedded
-  // inside the game's page viewer — the game's own top bar already
-  // shows the title and provides back/close navigation, so this
-  // header would otherwise let a player navigate to a different
-  // bundled page from within the same iframe, with the game's own
-  // title never updating to match. Left untouched for the standalone
-  // website, where window.self === window.top and this never fires.
-  if (window.self !== window.top) {
-    document.documentElement.classList.add('embedded');
-  }
+  /* Inside the game's page viewer: hide the site header/footer and show the Home button. */
+  if (window.self !== window.top) document.documentElement.classList.add('embedded');
 </script>
 </head>
 <body>
 
-<div class="wrap">
-  <button class="home-fab" onclick="window.parent.postMessage('block-blaster-go-home', '*')" aria-label="Home">
-    <img src="home-icon.png" alt="">
-  </button>
-  <header class="site">
-    <a href="index.html" class="brand">
-      <img class="brand-mark" src="app-icon.png" alt="Block Blaster icon">
-      <span class="brand-name">Block Blaster</span>
-    </a>
-    <nav class="site">
+<button class="home-fab" onclick="window.parent.postMessage('block-blaster-go-home', '*')" aria-label="Home"></button>
+
+<div class="top">
+  <div class="wrap">
+    <header class="site">
+      <a href="index.html" class="brand">
+        <img class="brand-mark" src="app-icon.png" alt="Block Blaster: Kingdom of Block icon">
+        <span class="brand-name">Block Blaster: Kingdom of Block</span>
+      </a>
+      <nav class="site" aria-label="Legal pages">
       <a href="about.html">About</a>
-      <a href="privacy.html" class="current">Privacy Policy</a>
+      <a href="privacy.html" class="current" aria-current="page">Privacy Policy</a>
       <a href="support.html">Help &amp; Support</a>
       <a href="terms.html">Terms of Service</a>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <section class="hero">
-    <div class="eyebrow"><img class="tile" src="app-icon.png" alt=""> Legal</div>
-    <h1>Privacy Policy</h1>
-    <p class="lede">What Block Blaster: The Kingdom of Blocks collects, why, and what choices you have about it.</p>
-    <p class="meta">Last updated: August 29, 2026</p>
-  </section>
+    <section class="hero">
+      <div class="eyebrow"><span class="tile"></span> Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="lede">What Block Blaster: Kingdom of Block collects, why, and what choices you have about it.</p>
+      <p class="meta">Last updated: November 2026</p>
+    </section>
+  </div>
 </div>
 
-<main class="card">
-  <div class="wrap" style="padding:0;">
+<main class="content">
+  <div class="wrap">
 
     <h2>Overview</h2>
-    <p>Block Blaster: The Kingdom of Blocks is developed and published by Gemlight Empress. This Privacy Policy explains what information the Game collects, how it is used, and the choices available to you.</p>
+    <p>Block Blaster: Kingdom of Block is developed and published by Gemlight Empress. This Privacy Policy explains what information the game collects, how it is used, and the choices available to you.</p>
 
     <div class="section-divider"><span></span><span></span><span></span></div>
 
     <h2>Information We Collect</h2>
+
+    <h3>Game Data Stored on Your Device</h3>
+    <p>The game stores certain game-related information on your device, including:</p>
     <ul>
-      <li><strong>Locally stored game data:</strong> your board size preference, block theme selection, and sound/music/vibration settings are stored on your device and are not transmitted to our servers.</li>
-      <li><strong>Google Play Games sign-in (automatic):</strong> the Game automatically signs in using the Google account already active on your device — there is no manual login screen. When signed in, Google Play Games Services accesses your Google player identifier to back up your best score, governed by Google's own privacy policy. If sign-in isn't available or is skipped, the Game remains fully playable using local storage only.</li>
-      <li><strong>Advertising identifiers:</strong> if advertising is enabled (Google AdMob), the ad network may collect device advertising identifiers, coarse location, and interaction data to serve and measure ads, subject to your device's ad-tracking settings.</li>
+      <li>Your best score</li>
+      <li>Your chosen block design and board size</li>
+      <li>Achievements</li>
+      <li>Today&rsquo;s Crunch streak</li>
+      <li>The display name you choose</li>
+      <li>A random Player ID created on your device</li>
+      <li>If you are signed in to Google Play Games: a copy of your Play Games display name and profile picture, used for your in-game profile</li>
+      <li>Whether you have completed (or skipped) the first-time tutorial</li>
+      <li>Sound, music, vibration and reminder settings</li>
     </ul>
 
-    <h2>How We Use Information</h2>
+    <h3>Google Play Games Sign-In</h3>
+    <p>The game uses Google Play Games Services. Signing in is optional, and the game is fully playable without it.</p>
     <ul>
-      <li>To save your game progress and settings locally on your device.</li>
-      <li>To back up your best score to Google Play Games Cloud Save while signed in (see "Cloud Save &amp; Score Sync" below).</li>
-      <li>To display and measure advertising through Google AdMob.</li>
+      <li>If you have already signed in to this game with Google Play Games, Google signs you in automatically in the background when the game starts. Google may show its own brief &ldquo;Welcome&rdquo; banner.</li>
+      <li>If you have not signed in yet, the game does not open any sign-in screen on its own.</li>
+      <li>You can sign in at any time from your profile in Settings.</li>
+    </ul>
+    <p>If you sign in, Google Play Games Services provides your:</p>
+    <ul>
+      <li>Player ID</li>
+      <li>Display name</li>
+      <li>Profile picture</li>
+    </ul>
+    <p>Your display name and profile picture appear on your profile in Settings, and a copy is kept on your device. They are not sent to any server of ours. Signing in also allows your game progress to be backed up using Google Play Games Cloud Save.</p>
+
+    <h3>Advertising</h3>
+    <p>The game is free to play and shows advertisements through Google AdMob:</p>
+    <ul>
+      <li><strong>Banner ads</strong> in a reserved strip at the bottom of the screen. The strip appears on every screen, including while you are playing a game, and the board is sized to sit above it so it never covers the game.</li>
+      <li><strong>Full-screen ads</strong> between games, for example after a game ends.</li>
+      <li><strong>Optional rewarded ads</strong> that you choose to watch for a bonus: continuing your game when the board is full (Revive).</li>
+    </ul>
+    <p>Google AdMob may collect device advertising identifiers, approximate location, and interaction data to serve and measure advertisements, subject to your device&rsquo;s advertising settings.</p>
+    <p><strong>Consent (EEA, UK and Switzerland):</strong> if you are in the European Economic Area, the United Kingdom or Switzerland, Google&rsquo;s consent form is shown before ads load, asking whether ads may be personalised. You can opt out of personalised advertising at any time through your device&rsquo;s own advertising settings, where you can also reset or delete your advertising ID.</p>
+
+    <h3>Analytics and Crash Reporting</h3>
+    <p>The Android app uses Google Analytics for Firebase to understand how the game is played, so we can improve the game and fix problems. It records gameplay events such as games started and finished, Today&rsquo;s Crunch completed, achievements unlocked and the first-time tutorial, together with an app-instance identifier, device model, operating system version, app version and approximate country. It does not record your name or email address.</p>
+    <p>The game also uses <strong>Firebase Crashlytics</strong>, which records a report when the game crashes or hits an error: the device model, operating system version, app version and a technical stack trace. These reports contain no personal details and are used only to find and fix faults.</p>
+
+    <h3>App Updates</h3>
+    <p>When the game starts it asks Google Play whether a newer version of the app is available, so it can offer you the update. This check is handled entirely by Google Play and sends us nothing about you.</p>
+
+    <h2>How We Use Information</h2>
+    <p>We use the information described above to:</p>
+    <ul>
+      <li>Save your game progress and settings on your device.</li>
+      <li>Back up and sync your progress through Google Play Games Cloud Save while you are signed in.</li>
+      <li>Show your name and profile picture (your chosen name, or your Google Play Games name and picture if you sign in) on your in-game profile.</li>
+      <li>Display and measure advertising through Google AdMob, and ask for your consent where required.</li>
+      <li>Understand how the game is played and improve it, using Google Analytics for Firebase.</li>
+      <li>Send reminders, such as a daily reminder to come back and play. Reminders are on by default and can be turned off at any time in Settings; they are scheduled entirely on your device, and Android asks for notification permission before any is shown.</li>
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>The Game integrates the following third-party services, each governed by its own privacy policy:</p>
+    <p>The game uses the following third-party services, all provided by Google. Each is governed by Google&rsquo;s own privacy policy, which you can read at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>:</p>
     <ul>
-      <li>Google Play Games Services (automatic sign-in, best score Cloud Save)</li>
-      <li>Google AdMob (advertising)</li>
+      <li><strong>Google Play Games Services</strong> &mdash; sign-in, player profile, and Cloud Save.</li>
+      <li><strong>Google AdMob</strong> &mdash; advertising, including Google&rsquo;s consent form where required.</li>
+      <li><strong>Google Analytics for Firebase</strong> &mdash; gameplay analytics.</li>
+      <li><strong>Firebase Crashlytics</strong> &mdash; crash and error reporting.</li>
+      <li><strong>Google Play Core (In-App Updates)</strong> &mdash; checking whether a newer version is available.</li>
     </ul>
 
-    <h2>Children's Privacy</h2>
-    <p>The Game is designed to be suitable for a general audience. We do not knowingly collect personal information from children beyond what is required for functionality such as advertising, which is configured to respect applicable child-directed treatment settings (e.g., Google's Families Ad Program) when the app is listed for a young audience.</p>
+    <h2>Children&rsquo;s Privacy</h2>
+    <p>The game is designed to be suitable for a general audience.</p>
+    <p>We do not knowingly collect personal information from children beyond what is required for the game to function, such as advertising, which is configured to respect applicable child-directed treatment settings when the app is listed for a young audience.</p>
 
-    <h2>Cloud Save &amp; Score Sync</h2>
-    <p>Your best score is saved on your device and, while automatically signed in, backed up to Google Play Games Cloud Save. Playing on another device with the same Google account restores your best score there — whichever score is higher is kept as the active one. If you play without an internet connection, your score continues saving locally and syncs the next time you're online.</p>
+    <h2>Cloud Save &amp; Progress Sync</h2>
+    <p>While you are signed in, your progress is saved on your device and backed up to Google Play Games Cloud Save automatically.</p>
+    <p>Playing on another device with the same Google account can restore your progress there. When progress exists on multiple devices, the more advanced progress is kept.</p>
+    <p>If you play offline, your progress continues to be saved on your device and will sync the next time you are online. You can also manually initiate synchronization by tapping <strong>&ldquo;Sync now&rdquo;</strong> on your profile in Settings.</p>
 
     <h2>Data Retention &amp; Deletion</h2>
-    <p>Locally stored progress and settings can be erased at any time by clearing app data/storage through your device settings, or by uninstalling the Game. Cloud-saved score data associated with your Google Play account is retained and deleted according to your Google Account settings.</p>
+    <p>You can erase your game progress at any time by using <strong>&ldquo;Reset Progress&rdquo;</strong> in Settings.</p>
+    <p>This clears the progress stored on your device and, if you are signed in, replaces your Cloud Save with a fresh start.</p>
+    <p>You can also clear the game&rsquo;s data through your device settings or uninstall the game.</p>
+    <p>Any data held by Google in connection with your Google account is retained and deleted according to your Google Account settings.</p>
 
     <h2>Your Choices</h2>
+    <p>You have the following choices:</p>
     <ul>
-      <li>You can opt out of personalized advertising through your device's ad settings.</li>
-      <li>You can independently disable sound, music, and vibration in the in-game Settings screen.</li>
-      <li>Because sign-in is automatic and tied to your device's active Google account, you can prevent it by signing out of Google Play Games at the device level, or managing permissions through your Google Account settings.</li>
+      <li>You can play entirely without signing in &mdash; the game never requires an account or an internet connection. You can sign in later from your profile in Settings.</li>
+      <li>You can opt out of personalised advertising, and reset or delete your advertising ID, in your device&rsquo;s advertising settings.</li>
+      <li>You can opt out of personalized advertising through your device&rsquo;s advertising settings.</li>
+      <li>You can turn off sound, music, vibration, and reminders in Settings.</li>
+      <li>You can change your display name at any time from your profile in Settings.</li>
+      <li>You can erase your game progress at any time using <strong>&ldquo;Reset Progress&rdquo;</strong> in Settings.</li>
     </ul>
 
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy periodically to reflect changes to the Game or applicable law.</p>
+    <p>We may update this Privacy Policy from time to time to reflect changes to the game or applicable law.</p>
+    <p>When we make changes, we will update the <strong>Last Updated</strong> date above and ask you to review the updated policy in the game.</p>
 
     <h2>Contact</h2>
     <div class="contact-card">
-      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--teal)"></span></div>
+      <div class="tile-row"><span style="background:var(--coral)"></span><span style="background:var(--gold)"></span><span style="background:var(--mint)"></span></div>
       <div>
-        <strong>Questions about this policy?</strong>
-        <p>Questions about this policy can be directed to Gemlight Empress at <a href="mailto:gemlightempress@gmail.com">gemlightempress@gmail.com</a>.</p>
+        <strong>Questions about this Privacy Policy?</strong>
+        <p>Gemlight Empress<br>Email: <a href="mailto:support@gemlightempress.com">support@gemlightempress.com</a></p>
       </div>
     </div>
 
   </div>
 </main>
 
-<div class="wrap">
-  <footer class="site">
-    <div>© 2026 Gemlight Empress. All rights reserved.</div>
-    <div class="foot-links">
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div class="foot-brand"><img src="app-icon.png" alt=""><span>&copy; 2026 Gemlight Empress. All rights reserved.</span></div>
+    <nav class="foot-links" aria-label="Footer">
       <a href="about.html">About</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="support.html">Help &amp; Support</a>
       <a href="terms.html">Terms of Service</a>
-    </div>
-  </footer>
-</div>
+    </nav>
+  </div>
+</footer>
 
 </body>
 </html>
